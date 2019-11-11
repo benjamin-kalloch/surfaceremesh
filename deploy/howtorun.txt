@@ -1,0 +1,9 @@
+Da Ubuntu 16.04 Debian Sid mittlerweile so weit hinterher ist,
+dass selbst die libc nicht mehr kompatibel ist, kann das kompilierte
+CGAL programm nicht mehr im Hostsystem ausgeführt werden.
+Um "volmesh" auszuführen, muss man die Konsole eines temporären
+Dockercontainers öffnen:
+
+sudo docker run --rm -v /home/kalloch/OpenFOAM/kalloch-3.0.1/additional_stuff/meshing/cgal/volmesh/deploy/:/shares -i -t --entrypoint /bin/bash debiansid_cgal
+
+Unter "/shares" befindet sich das die ausführbare Datei sowie input/output Ordner.

@@ -1,0 +1,7 @@
+deploy/remeshsurface
+CMakeFiles/
+*.swp
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
