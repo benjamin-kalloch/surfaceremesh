@@ -17,9 +17,9 @@ The following parameters are supported by our meshing tool ([!]=mandatory parame
 - **_help_** = display the help text [*]
 
 ## Secondary information
-To facilitate the setup of the proper environment to built the SurfaceRemesh tool, we provide a Dockerfile to create a container based on Ubuntu 19.04 which contains all required libraries. 
+To facilitate the setup of the proper environment to built the SurfaceRemesh tool, we provide a Dockerfile to create a container based on Ubuntu 20.04 which contains all required libraries. 
 
-Simply build the container with `docker build -t cgal_ubuntu1904 .` in the docker directory of this repository.
+Simply build the container with `docker build -t cgal_ubuntu2004 .` in the docker directory of this repository.
 Note: The container built according to the descriptions of the MeshHeadModel-tool can be used for the SurfaceRemesh-tool as well, but not vice-versa.
 
 When compiled in the container, the tool also must be launched from inside the container. You can do this by calling the *docker_run.sh* script which again invokes the *runMeshingTool.sh* script as mentioned before from inside the container. When using docker to run the tool consider that all paths within *runMeshingtTool.sh* (both input files and output files) must be specified according to the docker environment NOT according to the host machine. The best practice is to use the predefined input & output directories and to use paths relative to the SurfaceRemesh executable. 
