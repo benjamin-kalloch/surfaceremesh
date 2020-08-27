@@ -1,8 +1,8 @@
 #!/bin/bash
 
-BASE_DIR=$HOME/Repositories/tdcs-pipeline/
+BASE_DIR=/home/benny/Projects/tdcs-pipeline/surfaceremesh
 
-CONTAINER_NAME=cgal_and_gmsh_compiled_with_tbb_ubuntu1904
+CONTAINER_NAME=cgal_and_gmsh_compiled_with_tbb_ubuntu2004
 
 docker run               \
 	--rm                 \
